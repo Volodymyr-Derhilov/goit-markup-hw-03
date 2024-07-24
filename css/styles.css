@@ -36,6 +36,7 @@ img {
 
 .header {
     border-bottom: 1px solid #E7E9FC;
+    padding: 0 15px;
 }
 
 .container {
@@ -54,6 +55,7 @@ img {
 
 .list-link {
     display: flex;
+    gap: 40px;
 }
 
 .menu {
@@ -82,7 +84,8 @@ img {
     line-height: 1.5;
     font-weight: 500;
     letter-spacing: 0.02em;
-    margin-right: 40px;
+    display: block;
+    padding: 24px 0;
 }
 
 
@@ -117,12 +120,12 @@ img {
 }
 
 .section {
-    padding: 120px 0;
+    padding: 120px 0;    
 }
 
 .header-section-title {
     background-color: #2E2F42;
-    text-align: center;
+    padding: 188px 0;
 }
 
 .page-title {
@@ -131,10 +134,13 @@ img {
     line-height: 1.07;
     font-size: 56px;
     color: #FFFFFF;
-    margin-bottom: 48px;
+    max-width: 496px;    
+    margin: 0 auto 48px;
 }
 
 .button {
+    display: block;
+    min-width: 169px;
     font-size: 16px;
     letter-spacing: 0.04em;
     background-color: #4D5AE5;
@@ -147,11 +153,25 @@ img {
     border-radius: 4px;
     border: none;
     box-shadow: 0 4px 4px #2E2F42;
+    margin: 0 auto;
 }
 
 .button:hover,
 .button:focus {
     background-color: #404BBF;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .section-title {
@@ -166,17 +186,13 @@ img {
     margin-bottom: 72px;
 }
 
-.section-title.strateg {
-    display: none;
-}
-
 .strategies-list {
-    display: flex;
-    
+    display: flex;  
+    gap: 24px;  
 }
 
 .strategies-list-item {
-    margin-right: 24px;
+    flex-basis: calc((100% - 72px) / 4);
 }
 
 .title-description {
@@ -195,19 +211,23 @@ img {
     letter-spacing: 0.02em;
 }
 
+.team-card .paragraph {
+    text-align: center;
+}
+
 .section-team {
     background-color: #F4F4FD;
 }
 
 .team-card{
     background-color: #FFFFFF;
-    margin-right: 24px;
     box-shadow: 0 4px 4px #2E2F42;
-    border-radius: 0 4px 4px 0;
+    border-radius: 0 0 4px 4px;
 }
 
 .team-card .title-description {
     text-align: center;
+    margin-bottom: 8px;
 }
 
 .team-card .paragraph {
@@ -220,34 +240,39 @@ img {
 
 .people {
     display: flex;
+    gap: 24px;
+}
+
+.person-position {
+    padding: 32px 0;
+
 }
 
 .portfolio {
     display: flex;
     flex-wrap: wrap;
+    column-gap: 24px;
+    row-gap: 48px;
 }
 
 .project-card {
     width: calc((100% - 48px) / 3);
-    margin-right: 24px;
-    margin-bottom: 48px;
 }
 
-.project-card img {
-   margin-bottom: 32px;
-}
 
-.project-card .title-description,
-.project-card .paragraph {
-    margin-left: 16px;
+.portfolio-app {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
 }
 
 .footer {
     background-color: #2E2F42;
-}
-
-.footer .container {
     padding: 100px 0;
+}
+.container .logo {
+    display: inline-block;
+    margin-bottom: 16px;
 }
 
 .logo-second {
@@ -258,6 +283,6 @@ img {
     line-height: 1.5;
     color: #F4F4FD;
     letter-spacing: 0.02em;
-    margin-top: 16px;
+    max-width: 264px;
 }
 
