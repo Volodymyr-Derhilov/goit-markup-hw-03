@@ -187,12 +187,11 @@ img {
 
 .strategies-list {
     display: flex;  
-    row-gap: 24px;
-    column-gap: 24px;  
+    gap: 24px;
 }
 
 .strategies-list-item {
-    width: calc((100% - 3*24px) / 4);
+    flex-basis: calc((100% - 72px) / 4);
 }
 
 .title-description {
@@ -201,8 +200,7 @@ img {
     font-weight: 500;
     line-height: 1.2;
     letter-spacing: 0.02em;
-    margin-bottom: 8px;
-    
+    margin-bottom: 8px;    
 }
 
 .paragraph {
